@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}{{ regime.pseudonym }} — {{ regime.label }} — The AI Papers{% endblock %}
+{% block main %}
+<article class="regime-page" style="--accent: var(--color-{{ regime.slug }}); --accent-soft: var(--color-{{ regime.slug }}-soft);">
+  <header class="regime-hero">
+    <div class="container">
+      <p class="eyebrow">For the {{ regime.label|lower }} regime</p>
+      <h1 class="regime-name">{{ regime.pseudonym }}</h1>
+      <p class="regime-tagline-large">{{ regime.tagline }}</p>
+    </div>
+  </header>
+
+  <section class="regime-manifesto">
+    <div class="container narrow">
+      <h2 class="section-title">Manifesto</h2>
+      <div class="prose">{{ regime.manifesto_html|safe }}</div>
+    </div>
+  </section>
+
+  <section class="regime-essays">
+    <div class="container narrow">
+      <h2 class="section-title">Essays by {{ regime.pseudonym }}</h2>
+      {% if regime_essays %}
+      <ul class="essay-list">
+        {% for essay in regime_essays %}
+        <li>
+          <a href="{{ base_path }}/essays/{{ essay.question.slug }}/{{ essay.regime.slug }}/">
+            <span class="essay-list-number">No. {{ essay.question.number }}</span>
+            <span class="essay-list-title">{{ essay.title }}</span>
+            <span class="essay-list-question muted">on {{ essay.question.title|lower }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p class="muted">No essays yet.</p>
+      {% endif %}
+    </div>
+  </section>
+</article>
+{% endblock %}

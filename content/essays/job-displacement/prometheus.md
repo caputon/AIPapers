@@ -1,0 +1,35 @@
+---
+title: On the Productive Transition, and Who Funds It
+---
+
+I am sometimes accused, by friends in the state-led camp, of indifference to the displacements occasioned by the technology my colleagues build. The accusation rests on a confusion. I do not deny that the transitions in front of us will be substantial, occasionally painful, and uneven across regions, industries, and demographics. I deny that the prescription which follows from that observation is a wholesale transfer of authority over labor markets to a public agency whose tools, on the matter of where new work will arise, are blunt by construction.
+
+The company-led regime is not a regime that abandons workers to the operation of substitution. It is a regime that locates the responsibility for transition where the transition is occurring — at the firms whose products are doing the substituting, in concert with the firms whose products are doing the complementing — and that calls upon those firms to fund, support, and manage the adjustment in proportion to their gains.
+
+Consider the structural features of the present transition that the state-led regime, in my view, has yet to fully internalize.
+
+The first is that frontier AI is, in a degree without close historical precedent, *complementary to most labor before it is substitutionary for any labor*. A worker whose job has been augmented by AI tools is, in the typical case, more productive, more able to compete for higher-skill work, and less easily replaced than the same worker without those tools. The familiar narrative of pure substitution presumes a static labor market in which firms acquire AI capability and workers do not. This is not the trajectory observable in any frontier laboratory's customer data. It is the trajectory predicted by an analytical model whose assumptions are increasingly out of step with the empirical record.
+
+The second is that the firms most exposed to the productive gains of AI are the firms most able to fund the transition costs of those they displace. The instruments are familiar. Internal retraining programs, apprenticeship-to-employment pipelines for workers transitioning from displaced occupations, profit-sharing arrangements that bind a portion of AI productivity gains to the workers complementary to those gains, hiring obligations for workers from displaced sectors, transitional income supports negotiated as a condition of access to the firm's AI products. These are not novel instruments. They have been deployed, in narrower forms, in every previous industrial transition. Their scaling is a matter of will, not invention.
+
+The third is that the laboratories possess, by the nature of their work, *unique visibility into which capabilities will mature on which timelines, and therefore which classes of work will be augmented before they are substituted*. This visibility is the basis of an honest signal to the workforce about where to invest in skills. It is not the basis of a labor-market plan handed down from a public agency. It is the basis of an industry-published, regularly updated, third-party-verified account of capability progress, on which workers, employers, and educational institutions can make informed adjustments.
+
+The company-led regime I propose for this question rests on four commitments.
+
+The first is *transition financing, funded by the firms producing the gains*. Frontier developers and large-scale deployers should commit, as a condition of their continued license to operate at scale, to dedicated funds — administered with transparency, drawn down against measurable transition needs — for the retraining, income support, and re-employment of workers in occupations directly affected by the firms' deployments. These are not charity. They are the proper internalization of a cost the firms' technology is producing.
+
+The second is *complementary deployment as a default*. Frontier developers should be expected to publish, alongside any major capability release, an analysis of the affected occupations and the complementary applications that the same capability enables. This is not a public-relations exercise. It is the basis on which workers in affected industries can identify the most direct paths from displacement to augmentation, and on which the firms themselves can be held accountable for whether their products are, on net, substitutionary or complementary.
+
+The third is *industry-academic partnership at scale*. The retraining the polity will require cannot be delivered by the existing apparatus alone. The frontier laboratories, in partnership with universities, community colleges, and apprenticeship programs, are in a position to design, certify, and deliver retraining at the scale and pace the transition will require. This requires sustained funding, transparent metrics of placement, and accountability for outcomes — none of which is incompatible with industry leadership.
+
+The fourth is *participation in such public instruments as the polity adopts*, with technical input from the firms whose work is most directly relevant. I do not, in the end, oppose the public instruments Leviathan describes. I oppose their being designed without the technical inputs that determine whether they will work. A retraining program that misidentifies the skills the next labor market will reward is a program that has spent the public's money to the workers' disadvantage. The laboratories' visibility is a resource the polity's transition planners cannot afford to leave on the table.
+
+To Leviathan I say: the state instruments you propose are not in conflict with the firms' role; they are in conflict with the firms' *exclusive* role, a position no one in the company-led camp has actually taken. Build the social insurance. Build the retraining apparatus. Fund it, in part, by drawing on the firms whose technology has occasioned it. The firms will, in many cases, agree.
+
+To Demos I say: a plural ecosystem distributes the tools. It does not, by itself, place those tools in the hands of workers whose prior careers were built on different tools. The retraining problem is not solved by access to the model. It is solved by the deliberate funding of transition by the parties whose deployments are producing it.
+
+To Concord I say: I welcome international coordination on the questions of AI taxation and labor protection, in domains where uncoordinated action would invite arbitrage. I observe that such coordination, like the treaty work in other domains, matures on a longer timescale than the transition itself. In the meantime, the firms are capable of acting, and should be expected to.
+
+The transition will not be costless. It will not be perfectly distributed. It will be, in the end, a transition the polity survives or does not survive in proportion to the seriousness with which the parties capable of acting choose to act. The firms are among those parties. The company-led regime makes their action a structural commitment, not an aspiration.
+
+— *Prometheus*

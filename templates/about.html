@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}About — The AI Papers{% endblock %}
+{% block main %}
+<article class="about-page">
+  <div class="container narrow">
+    <p class="eyebrow">About this project</p>
+    <div class="prose">{{ body_html|safe }}</div>
+  </div>
+</article>
+{% endblock %}

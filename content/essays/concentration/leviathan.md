@@ -1,0 +1,35 @@
+---
+title: On the Sovereign as the Sole Reliable Check upon Concentration
+---
+
+The question of concentration in artificial intelligence is sometimes posed as if the regimes on offer were equally distinguished from one another in their susceptibility to this danger. They are not. The state-led regime, which my correspondents have throughout these pages portrayed as the regime most prone to concentration, is in fact the only regime among us that is structured to *check* concentration as a matter of constitutional first principle. Each of the alternatives proposes to address concentration by means whose effectiveness depends, in the end, on the very public instruments the state-led regime is built to wield.
+
+Consider, with care, the form concentration takes under each of the regimes my correspondents propose.
+
+Under the company-led regime, concentration is addressed by the assumption that the laboratories, in active competition with one another, will not concentrate in ways that defeat the discipline of the makers. The assumption is plausible at the present moment, when several frontier laboratories operate in genuine competitive uncertainty. The assumption fails when the laboratories consolidate, as concentrated industries reliably do; when one laboratory acquires a durable lead; or when the laboratories' competitive interests align in directions adverse to the public's. None of these failure modes is hypothetical. Each is the historical equilibrium of every concentrated industry the polity has previously confronted.
+
+Under the decentralized regime, concentration is addressed by the structural plurality of the AI ecosystem itself — open weights, civic compute, the structural separation of model from platform. The instruments are admirable. They are also, in their operative form, instruments that require enforcement. Open weights remain open by virtue of antitrust, intellectual property, and trade policy decisions that only the state may make. Civic compute remains civic by virtue of public funding and public governance, both of which are state instruments. Structural separation remains structural by virtue of antitrust enforcement, which is a state instrument. The decentralized regime does not, in its honest form, abolish the state. It depends on the state's willingness to use a particular set of public instruments to maintain the plurality the regime celebrates.
+
+Under the international regime, concentration is addressed at the level of the community of nations, through coordinated antitrust action, multilateral standards, and treaty-based commitments. I welcome these instruments. I observe that each is, in its operational form, the harmonized exercise of domestic public authority by the parties to the regime. Without the domestic public authority, the international regime is harmonization without enforcement.
+
+The state-led regime, by contrast, addresses concentration directly, with instruments specifically designed for the purpose, on a record of historical effectiveness that is mixed but not negligible.
+
+I propose four commitments.
+
+The first is *the active use of antitrust authority on the question of AI concentration*, with attention to the structural features that distinguish AI markets from previous technology markets. The relevant concentrations are not only horizontal — many models from one firm — but vertical: model, training data, compute, distribution channel, and integration into the customer's operational workflow. Each layer of the stack is a candidate for the kind of vertical lock-in that has, in earlier technologies, produced concentrated outcomes the polity has spent generations attempting to undo. The instruments by which earlier polities prevented vertical integration in railways, broadcasting, and banking are the instruments the present polity must direct to AI.
+
+The second is *structural separation between the model and the channel*. A firm that develops a frontier model and also controls the principal channel through which the model reaches the customer is positioned to dictate, simultaneously, the substance and the terms of access to that substance. The structural separation between the model layer and the channel layer is the instrument by which competition in models becomes operative for the customer rather than theoretical. The instrument is well-precedented. Its application to AI requires legislation we have not yet enacted.
+
+The third is *limits on the consolidation of compute*. A firm that controls a disproportionate share of the global compute capable of training frontier models is a firm whose position is structurally consolidated regardless of competition in the model layer. Compute consolidation is the underlying physics of AI consolidation; it is not adequately addressed by competition policy directed at the visible products. The instruments include foreign investment review, antitrust scrutiny of vertical compute arrangements, and, where necessary, legislative action to prevent compute holdings from reaching levels at which competitive entry becomes structurally impossible.
+
+The fourth is *transparency as a precondition of competition*. The polity cannot enforce competition policy on markets it cannot see. Disclosure obligations on training compute, model provenance, deployment scale, and platform-to-model relationships are the precondition of the antitrust posture I propose. Without transparency, antitrust is, on AI, a regulatory authority operating in the dark.
+
+To Prometheus I say: the discipline of the makers is the present discipline. The structural conditions of the present moment, including the genuine competition among frontier laboratories, are not permanent. The polity that does not build the instruments of antitrust against AI concentration before the consolidation occurs will build them, if at all, after the consolidation has rendered them ineffective.
+
+To Demos I say: the plural ecosystem you defend is not in tension with the state-led regime; it is the policy outcome a state-led regime should be designed to produce and protect. Open weights, civic compute, and structural separation are state-enforced features of the AI economy. They do not arise spontaneously. They arise where the polity, through its public instruments, has chosen them.
+
+To Concord I say: the international regime against concentrations is a regime whose effectiveness rests on the domestic antitrust capacity of its parties. Build the domestic capacity. The international regime, when constructed, will harmonize a real instrument rather than a theoretical one.
+
+The Sovereign is itself a concentration. I have not denied this. I have observed that it is a concentration with constitutional limits, periodic accountability, and a record of, on its better moments, deconcentrating private power that no other party in the polity is structurally positioned to deconcentrate. To object to the Sovereign on the grounds of concentration is to mistake an instrument for the danger it is built to address.
+
+— *Leviathan*

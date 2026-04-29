@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block title %}The AI Papers — A Proof-of-Concept Exchange on AI Governance{% endblock %}
+{% block main %}
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">A proof-of-concept exchange</p>
+    <h1>The AI Papers</h1>
+    <p class="lede">
+      In 1787, partisans for and against a new American constitution argued in print under Roman pseudonyms,
+      forcing each side to articulate first principles instead of slogans. This site stages a similar exchange —
+      not over a constitution, but over the institutions that will govern advanced artificial intelligence.
+      Four regimes. Three questions. Twelve essays and their rebuttals.
+    </p>
+    <p class="lede-sub">
+      Each regime is steelmanned by a pseudonymous advocate. After every essay, rivals respond.
+      The aim is not to decide the question but to make the tradeoffs visible.
+    </p>
+  </div>
+</section>
+
+<section id="regimes" class="regimes">
+  <div class="container">
+    <h2 class="section-title">The Four Regimes</h2>
+    <div class="regime-grid">
+      {% for r in regimes_list %}
+      <a class="regime-card" href="{{ base_path }}/regimes/{{ r.slug }}/" style="--accent: var(--color-{{ r.slug }}); --accent-soft: var(--color-{{ r.slug }}-soft);">
+        <div class="regime-card-bar"></div>
+        <div class="regime-card-body">
+          <p class="regime-label">{{ r.label }}</p>
+          <h3 class="regime-pseudonym">{{ r.pseudonym }}</h3>
+          <p class="regime-tagline">{{ r.tagline }}</p>
+          <p class="regime-cta">Read manifesto →</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="questions" class="questions">
+  <div class="container">
+    <h2 class="section-title">The Questions</h2>
+    <ol class="question-list">
+      {% for q in questions_list %}
+      <li>
+        <a href="{{ base_path }}/questions/{{ q.slug }}/" class="question-row">
+          <div class="question-number">No. {{ q.number }}</div>
+          <div class="question-text">
+            <h3>{{ q.title }}</h3>
+            <p>{{ q.prompt }}</p>
+          </div>
+          <div class="question-arrow">→</div>
+        </a>
+      </li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+{% endblock %}

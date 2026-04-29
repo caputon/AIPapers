@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %}No. {{ question.number }}. {{ question.title }} — The AI Papers{% endblock %}
+{% block main %}
+<article class="question-page">
+  <header class="question-hero container">
+    <p class="eyebrow">Question No. {{ question.number }}</p>
+    <h1>{{ question.title }}</h1>
+    <p class="prompt">{{ question.prompt }}</p>
+    {% if question.intro_html %}
+    <div class="prose intro">{{ question.intro_html|safe }}</div>
+    {% endif %}
+    <nav class="essay-jump">
+      <span class="muted">Jump to:</span>
+      {% for essay in essays if essay %}
+      <a href="#essay-{{ essay.regime.slug }}" style="color: var(--color-{{ essay.regime.slug }});">{{ essay.regime.pseudonym }}</a>
+      {% if not loop.last %}<span class="dot">·</span>{% endif %}
+      {% endfor %}
+    </nav>
+  </header>
+
+  {% for essay in essays %}
+    {% if essay %}
+    <section class="essay-block" id="essay-{{ essay.regime.slug }}" style="--accent: var(--color-{{ essay.regime.slug }}); --accent-soft: var(--color-{{ essay.regime.slug }}-soft);">
+      <div class="container">
+        <div class="essay-head">
+          <p class="essay-byline">
+            <a href="{{ base_path }}/regimes/{{ essay.regime.slug }}/">{{ essay.regime.pseudonym }}</a>
+            <span class="muted"> — for the {{ essay.regime.label|lower }} regime</span>
+          </p>
+          <h2 class="essay-title">{{ essay.title }}</h2>
+        </div>
+        <div class="prose essay-body">{{ essay.body_html|safe }}</div>
+
+        {% if essay.rebuttals %}
+        <div class="rebuttals">
+          <h3 class="rebuttals-heading">Rebuttals</h3>
+          {% for reb in essay.rebuttals %}
+          <article class="rebuttal" id="rebuttal-{{ essay.regime.slug }}-{{ reb.author.slug }}" style="--accent: var(--color-{{ reb.author.slug }}); --accent-soft: var(--color-{{ reb.author.slug }}-soft);">
+            <p class="rebuttal-byline">
+              <a href="{{ base_path }}/regimes/{{ reb.author.slug }}/">{{ reb.author.pseudonym }}</a>
+              <span class="muted"> replies</span>
+            </p>
+            <h4 class="rebuttal-title">{{ reb.title }}</h4>
+            <div class="prose rebuttal-body">{{ reb.body_html|safe }}</div>
+          </article>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <p class="essay-permalink">
+          <a href="{{ base_path }}/essays/{{ essay.question.slug }}/{{ essay.regime.slug }}/">Permalink to this essay →</a>
+        </p>
+      </div>
+    </section>
+    {% else %}
+    <section class="essay-block essay-pending">
+      <div class="container">
+        <p class="muted">An essay for this regime on this question has not yet been written.</p>
+      </div>
+    </section>
+    {% endif %}
+  {% endfor %}
+</article>
+{% endblock %}

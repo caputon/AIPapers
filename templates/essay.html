@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}{{ essay.title }} — {{ essay.regime.pseudonym }} — The AI Papers{% endblock %}
+{% block main %}
+<article class="essay-page" style="--accent: var(--color-{{ essay.regime.slug }}); --accent-soft: var(--color-{{ essay.regime.slug }}-soft);">
+  <header class="essay-hero">
+    <div class="container narrow">
+      <p class="eyebrow">
+        <a href="{{ base_path }}/questions/{{ essay.question.slug }}/">No. {{ essay.question.number }}. {{ essay.question.title }}</a>
+      </p>
+      <h1 class="essay-title">{{ essay.title }}</h1>
+      <p class="essay-byline">
+        <a href="{{ base_path }}/regimes/{{ essay.regime.slug }}/">{{ essay.regime.pseudonym }}</a>
+        <span class="muted"> — for the {{ essay.regime.label|lower }} regime</span>
+      </p>
+    </div>
+  </header>
+
+  <section class="essay-content">
+    <div class="container narrow">
+      <div class="prose">{{ essay.body_html|safe }}</div>
+    </div>
+  </section>
+
+  {% if essay.rebuttals %}
+  <section class="rebuttals-section">
+    <div class="container narrow">
+      <h2 class="section-title">Rebuttals</h2>
+      {% for reb in essay.rebuttals %}
+      <article class="rebuttal" id="rebuttal-{{ reb.author.slug }}" style="--accent: var(--color-{{ reb.author.slug }}); --accent-soft: var(--color-{{ reb.author.slug }}-soft);">
+        <p class="rebuttal-byline">
+          <a href="{{ base_path }}/regimes/{{ reb.author.slug }}/">{{ reb.author.pseudonym }}</a>
+          <span class="muted"> replies</span>
+        </p>
+        <h3 class="rebuttal-title">{{ reb.title }}</h3>
+        <div class="prose rebuttal-body">{{ reb.body_html|safe }}</div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <nav class="essay-nav">
+    <div class="container narrow">
+      <a href="{{ base_path }}/questions/{{ essay.question.slug }}/">← Back to No. {{ essay.question.number }}. {{ essay.question.title }}</a>
+    </div>
+  </nav>
+</article>
+{% endblock %}
