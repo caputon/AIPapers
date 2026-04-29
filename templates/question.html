@@ -18,6 +18,22 @@
     </nav>
   </header>
 
+  {% if cruxes %}
+  <section class="cruxes">
+    <div class="container">
+      <p class="cruxes-eyebrow">Editor's note — what the regimes are really disagreeing about</p>
+      <ol class="cruxes-list">
+        {% for crux in cruxes %}
+        <li>
+          <strong>{{ crux.title }}</strong>
+          {{ crux.body }}
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+  {% endif %}
+
   {% for essay in essays %}
     {% if essay %}
     <section class="essay-block" id="essay-{{ essay.regime.slug }}" style="--accent: var(--color-{{ essay.regime.slug }}); --accent-soft: var(--color-{{ essay.regime.slug }}-soft);">

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Compare — The AI Papers{% endblock %}
+{% block main %}
+<article class="compare-page">
+  <header class="compare-hero">
+    <div class="container">
+      <p class="eyebrow">At a glance</p>
+      <h1>Where the regimes stand</h1>
+      <p class="lede">
+        The four regimes' positions on the concrete policy levers their essays describe.
+        Read across a row to see disagreement on a single question.
+        Read down a column to see one regime's program in summary.
+      </p>
+    </div>
+  </header>
+
+  <nav class="compare-jump">
+    <div class="container">
+      <span class="muted">Jump to:</span>
+      {% for group in comparison_groups %}
+      <a href="#group-{{ loop.index }}">{{ group.title }}</a>
+      {% if not loop.last %}<span class="dot">·</span>{% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+
+  {% for group in comparison_groups %}
+  <section class="compare-group" id="group-{{ loop.index }}">
+    <div class="container">
+      <h2 class="compare-group-title">{{ group.title }}</h2>
+      <p class="compare-group-summary">{{ group.summary }}</p>
+
+      {% for lever in group.levers %}
+      <article class="compare-lever" id="{{ lever.slug }}">
+        <header class="compare-lever-header">
+          <h3 class="compare-lever-title">{{ lever.title }}</h3>
+          <p class="compare-lever-prompt">{{ lever.prompt }}</p>
+        </header>
+        <div class="compare-grid">
+          {% for r in regimes_list %}
+          {% set pos = lever.positions[r.slug] %}
+          <div class="compare-cell" style="--accent: var(--color-{{ r.slug }}); --accent-soft: var(--color-{{ r.slug }}-soft);">
+            <p class="compare-cell-regime">
+              <a href="{{ base_path }}/regimes/{{ r.slug }}/">{{ r.pseudonym }}</a>
+            </p>
+            <p class="compare-cell-stance">{{ pos.stance }}</p>
+            <p class="compare-cell-summary">{{ pos.summary }}</p>
+            <p class="compare-cell-link">
+              <a href="{{ base_path }}/essays/{{ pos.essay }}/{{ r.slug }}/">
+                See in {{ questions_by_slug[pos.essay].title|lower }} →
+              </a>
+            </p>
+          </div>
+          {% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</article>
+{% endblock %}
